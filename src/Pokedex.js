@@ -26,4 +26,5 @@ Pokedex.defaultProps = {
     {id: 133, name: 'Eevee', type: 'normal', base_experience: 65}
   ]
 }
+
 export default Pokedex;

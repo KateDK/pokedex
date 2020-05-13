@@ -1,9 +1,14 @@
 import React from 'react';
 
 const Pokecard = (props) => {
-  console.log(">>>", props);
+  const {id,name,type,base_experience} = props;
   return (
-    <div>Pokecard</div>
+    <div>
+      <h1>{name}</h1>
+
+      <p>Type: {type}</p>
+      <p>EXP: {base_experience}</p>
+    </div>
   )
 }
 
