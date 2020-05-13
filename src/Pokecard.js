@@ -5,7 +5,7 @@ const Pokecard = (props) => {
   return (
     <div>
       <h1>{name}</h1>
-
+      <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}/>
       <p>Type: {type}</p>
       <p>EXP: {base_experience}</p>
     </div>
