@@ -1,6 +1,5 @@
 import React from 'react';
 import Pokecard from './Pokecard';
-import pokemons from './pokemons'
 
 const Pokedex = () =>{
   console.log(pokemons);
