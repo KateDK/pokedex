@@ -8,8 +8,8 @@ const Pokedex = (props) =>{
 const {pokemons} = props;
 console.group(pokemons);
   return (
-    <div>
-      <h1>Pokedex</h1>
+    <div className="Pokedex">
+
       {pokemons.map(({id,name,type,base_experience}) => <Pokecard key={id} id={id} name={name} type={type} base_experience={base_experience} />)}
     </div>
   )

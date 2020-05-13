@@ -3,8 +3,8 @@ import React from 'react';
 const Pokecard = (props) => {
   const {id,name,type,base_experience} = props;
   return (
-    <div>
-      <h1>{name}</h1>
+    <div className="Pokecard">
+      <h1 className="Pokecard_name">{name}</h1>
       <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`}/>
       <p>Type: {type}</p>
       <p>EXP: {base_experience}</p>
