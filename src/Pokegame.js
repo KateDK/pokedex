@@ -10,6 +10,18 @@ const dealHand = cards => {
   return hand;
 }
 
+const calcHand = hand => {
+  let strength = 0;
+  for(let i = 0; i < hand.length; i++){
+    strength+= hand[i].base_experience
+  }
+  return strength;
+}
+
+const isWinner = (hand1,hand2) =>{
+  return calcHand(hand1) >= calcHand(hand2);
+}
+
 const Pokegame = props => {
   const hand1 = dealHand(pokemons)
   const hand2 = dealHand(pokemons)
