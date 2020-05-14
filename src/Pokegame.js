@@ -11,7 +11,14 @@ const dealHand = cards => {
 }
 
 const Pokegame = props => {
-return (<h1>Pokegame</h1>)
+  const hand1 = dealHand(pokemons)
+  const hand2 = dealHand(pokemons)
+return (
+  <div>
+    <Pokedex pokemons={hand1}/>
+    <Pokedex pokemons={hand2}/>
+  </div>
+  );
 }
 
 export default Pokegame;
