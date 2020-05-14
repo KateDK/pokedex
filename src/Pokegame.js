@@ -26,9 +26,9 @@ const Pokegame = props => {
   const hand1 = dealHand(pokemons)
   const hand2 = dealHand(pokemons)
 return (
-  <div>
-    <Pokedex pokemons={hand1}/>
-    <Pokedex pokemons={hand2}/>
+  <div className='Pokegame'>
+    <Pokedex pokemons={hand1} isWinner={isWinner(hand1,hand2)}/>
+    <Pokedex pokemons={hand2} isWinner={isWinner(hand2,hand1)}/>
   </div>
   );
 }
