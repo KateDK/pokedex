@@ -24,6 +24,12 @@
   border-radius: 5%;
 }
 
+.Pokecard:hover {
+  background-color: rgb(197, 195, 195);
+
+  box-shadow: 10px 10px 5px #595959;
+}
+
 .Pokecard_name {
   color: cornflowerblue;
 }
