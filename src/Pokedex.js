@@ -3,10 +3,7 @@ import Pokecard from './Pokecard';
 
 
 const Pokedex = (props) =>{
-  //console.log(pokemons);
-  console.log(">>>", props);
 const {pokemons} = props;
-console.group(pokemons);
   return (
     <div className="Pokedex">
 
