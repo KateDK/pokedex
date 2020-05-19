@@ -7,12 +7,14 @@ const padding = (n) => {
   return num.join('');
 }
 
+const pokApi = "https://assets.pokemon.com/assets/cms2/img/pokedex/detail/";
+
 const Pokecard = (props) => {
   const {id,name,type,base_experience} = props;
   return (
     <div className="Pokecard">
       <h1 className="Pokecard_name">{name}</h1>
-      <img src={`https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${padding(id)}.png`}/>
+      <img src={`${pokApi}${padding(id)}.png`}/>
       <p>Type: {type}</p>
       <p>EXP: {base_experience}</p>
     </div>
