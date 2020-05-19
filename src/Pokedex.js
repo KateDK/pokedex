@@ -7,7 +7,7 @@ const {pokemons, isWinner} = props;
   return (
     <div className="Pokedex">
       {isWinner ? <h2 className='Pokedex_winner'>THIS HAND WINS!</h2> :null}
-      {pokemons.map(({id,name,type,base_experience}) => <Pokecard key={id} id={id} name={name} type={type} base_experience={base_experience} />)}
+      {pokemons.map(({id,name,type,base_experience}) => <Pokecard key={id+Math.random()} id={id} name={name} type={type} base_experience={base_experience} />)}
 
     </div>
   )
