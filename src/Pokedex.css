@@ -1,0 +1,13 @@
+.Pokedex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: gainsboro;
+  margin-bottom: 3%;
+}
+
+.Pokedex_winner {
+  color: rgb(100, 150, 13);
+  width: 100%;
+}
