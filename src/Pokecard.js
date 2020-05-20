@@ -1,4 +1,5 @@
 import React from 'react';
+import './Pokecard.css';
 
 const padding = (n) => {
   let num = n + 1000;
