@@ -1,6 +1,6 @@
 import React from 'react';
 import Pokecard from './Pokecard';
-import './Pokedex.css'
+
 
 const Pokedex = (props) =>{
 const {pokemons, isWinner} = props;
