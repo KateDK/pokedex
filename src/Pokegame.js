@@ -25,10 +25,18 @@ const isWinner = (hand1,hand2) =>{
 const Pokegame = props => {
   const hand1 = dealHand(pokemons)
   const hand2 = dealHand(pokemons)
+  const winner = "This Hand Wins!";
+  const looser = "Looser Hand";
 return (
   <div className='Pokegame'>
-    <Pokedex pokemons={hand1} isWinner={isWinner(hand1,hand2)}/>
-    <Pokedex pokemons={hand2} isWinner={isWinner(hand2,hand1)}/>
+    <div className='Pokegame_hand'>
+      <Pokedex pokemons={hand1} />
+      {isWinner(hand1,hand2) ? <h2 className="Pokegame_winner">{winner}</h2> : <h2 className="Pokegame_looser">{looser}</h2>}
+    </div>
+    <div className='Pokegame_hand'>
+      {isWinner(hand2,hand1) ? <h2 className="Pokegame_winner">{winner}</h2> : <h2 className="Pokegame_looser">{looser}</h2>}
+      <Pokedex pokemons={hand2} />
+    </div>
   </div>
   );
 }
