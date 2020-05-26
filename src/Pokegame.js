@@ -1,6 +1,7 @@
 import React from 'react';
-import Pokedex from './Pokedex'
-import pokemons from './pokemons'
+import Pokedex from './Pokedex';
+import pokemons from './pokemons';
+import './Pokegame.css';
 
 const dealHand = cards => {
   const hand = [];

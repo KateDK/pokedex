@@ -1,0 +1,12 @@
+.Pokegame_hand {
+  background-color: rgb(230, 227, 227);
+}
+
+.Pokegame_winner {
+  color: lightseagreen;
+}
+
+.Pokegame_looser {
+  color: indianred;
+  padding: 0em 1em;
+}
