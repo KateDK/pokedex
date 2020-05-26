@@ -3,10 +3,9 @@ import Pokecard from './Pokecard';
 import './Pokedex.css'
 
 const Pokedex = (props) =>{
-const {pokemons, isWinner} = props;
+const {pokemons} = props;
   return (
     <div className="Pokedex">
-      {isWinner ? <h2 className='Pokedex_winner'>THIS HAND WINS!</h2> :null}
       {pokemons.map(({id,name,type,base_experience}) => <Pokecard key={id+Math.random()} id={id} name={name} type={type} base_experience={base_experience} />)}
 
     </div>
