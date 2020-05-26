@@ -25,6 +25,11 @@
   align-items: center;
 }
 
-img {
+.Pokecard img {
   height: 270px;
+  transition: transform 700ms;
+}
+
+.Pokecard img:hover {
+  transform: scale(1.25);
 }
