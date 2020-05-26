@@ -1,12 +1,7 @@
 import React from 'react';
 import './Pokecard.css';
 
-const padding = (n) => {
-  let num = n + 1000;
-  num = (num+="").split('');
-  num.shift();
-  return num.join('');
-}
+const padding = (n) => (n <= 999 ? `00${n}`.slice(-3) : n)
 
 const pokApi = (id) =>{
   return `https://assets.pokemon.com/assets/cms2/img/pokedex/detail/${padding(id)}.png`
