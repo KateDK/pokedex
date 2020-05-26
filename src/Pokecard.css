@@ -7,10 +7,24 @@
 }
 
 .Pokecard:hover {
-  background-color: rgb(197, 195, 195);
+  background-color: rgb(189, 186, 186);
   box-shadow: 10px 10px 5px #595959;
 }
 
 .Pokecard_name {
   color: cornflowerblue;
+}
+
+.Pokecard-img {
+  background-color: rgb(247, 237, 240);
+  margin: 1.2em;
+  height: 300px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 270px;
 }

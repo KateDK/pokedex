@@ -13,7 +13,9 @@ const Pokecard = (props) => {
   return (
     <div className="Pokecard">
       <h1 className="Pokecard_name">{name}</h1>
-      <img alt={name} src={pokApi(id)}/>
+      <div className='Pokecard-img'>
+        <img alt={name} src={pokApi(id)}/>
+      </div>
       <p>Type: {type}</p>
       <p>EXP: {base_experience}</p>
     </div>
